@@ -1,0 +1,353 @@
+*{ 
+  margin:0;
+  padding:0;
+}
+.hader{
+    min-height:100vh;
+    width:100%;
+    background-image:url("imge/istockphoto-1399475187-170667a.jpg");
+    background-position:center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+  display: flex;
+  padding: 3% 5%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h3{
+   color: aliceblue;
+   font-size:18px;
+   text-transform: uppercase;
+}
+.nav-menu{
+     flex:1;
+     text-align: right;
+}
+.nav-menu ul li{
+       list-style:none;
+       display: inline-block;
+       margin:0px 12px;
+       position:relative;
+}
+.nav-menu ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:14px;
+    text-transform:uppercase;
+}
+.nav-menu ul li::after{
+  content: ' ';
+  width:0px;
+  height:5px;
+  display:block;
+  margin:auto;
+  position:absolute;
+  background-color: black;
+  bottom:-5px;
+  transition:.5s;
+}
+  
+.nav-menu ul li:hover::after{
+  width:100%;
+}
+.my-profile{
+  width:40%;
+  position: absolute;
+  top:40.30%;
+  left:49%;
+  transform: translate(25%,-30%);
+}
+.discription{
+   width:80%;
+   color:white;
+   position: absolute;
+   top:50%;
+   left:48%;
+   transform: translate(-50%,-50%);
+}
+.discription h1{
+  font-size:60px;
+
+  
+}
+
+
+.discription p{
+  font-size:17px;
+}
+.discription a{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border:2px solid white;
+  background:transparent;
+  position: relative;
+  cursor: pointer;
+  padding: 15px 30px;
+  font-size:16px;
+}
+.discription a:hover{
+  background:rgb(36, 143, 89) ;
+  border:2px solid black;
+  transition:1s;
+
+}
+nav span{
+  display: none;
+}
+@media(max-width:700px){
+  .discription{
+    width:90%;
+    color:white;
+    position: absolute;
+    top:48%;
+    left:52%;
+    transform: translate(-55%,-50%);
+    text-align: center;
+ }
+ .discription h1{
+  font-size:25px;
+  flex-direction: column;
+  
+  }
+  nav span{
+    display: block;
+    color:white;
+    margin: 10px;
+    font-size: 25px;
+    cursor:pointer;
+  }
+  .nav-menu{
+    position: absolute;
+    background: rgba(0,0,0,0.2);
+    height:100vh;
+    width:300px;
+    top:0;
+    right:-300px;
+    text-align: left;
+    z-index:1;
+    transition: 1s;
+  }
+  .nav-menu ul li{
+    display:block;
+    margin:10px 0;
+     }
+  .my-profile{
+   width:40.85%;
+   position: absolute;
+   top:68.20%;
+   left:39%;
+   transform: translate(55%,-27%);
+    }
+
+
+}
+.nav-menu ul{
+  padding:20px;
+}
+.row{
+  display: flex;
+  margin-top:5%;
+  justify-content: space-between;
+}
+
+
+
+
+.about-me img{
+  width:50%;
+ border-radius:50%;
+  
+ 
+}
+
+.tanvir-about{
+  width:80%;
+  margin: auto;
+  text-align: center;
+  padding-top:100px;
+}
+.tanvir-about h1{
+  text-decoration: underline;
+}
+.about-me{
+    flex-basis: 45%;
+    border-radius:10px;
+    margin-bottom:4%;
+}
+.about-me h2{
+  margin-top:14px;
+  margin-bottom:14px;
+  text-align:left;
+}
+.about-me p{
+  color: #777;
+  font-size:15px;
+  font-weight:300;
+  line-height:20px;
+  padding:20px;
+  text-align: left;
+}
+@media(max-width:700px){
+  .row{
+   flex-direction: column;
+
+}
+}
+.services{
+  width: 80%;
+  margin: auto;
+  padding-top:100px;
+  text-align: center;
+}
+.services h1{
+  font-size: 30px;
+  text-decoration: underline;
+  font-weight: 300;
+}
+.services p{
+  color: #777;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  padding:12px;
+}
+.clume{
+  flex-basis: 30%;
+  background:#F08080;
+  border-radius:10PX;
+  margin-bottom: 5%;
+  padding:20px 12px;
+  box-sizing: border-box;
+}
+.clume h2{
+  text-align: center;
+  font-weight: 300;
+  margin: 10px;
+}
+.clume:hover{
+  box-shadow: 0 0 30px 0 rgba(0,0,0,0.3);
+}
+.protflio{
+  width: 80%;
+  margin: auto;
+  padding-top:100px;
+  text-align: center;
+  background: #FFDAB9 ;
+  border-radius: 10px;
+}
+.protflio h1{
+  font-size: 30px;
+  text-decoration: underline;
+  font-weight: 300;
+}
+.protflio p{
+  color: #777;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  padding:12px;
+}
+.clume-protflio{
+  flex-basis:30%;
+  border-radius:10px;
+  margin-bottom:30px;
+  position: relative;
+  overflow: hidden;
+}
+.clume-protflio img{
+  width:100%;
+  display: block;
+}
+.overlay{
+  background:transparent;
+  width:100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition:1s;
+}
+.overlay:hover{
+  background: rgba(225,0,0,0.5);
+}
+.overlay h3{
+  width:100%;
+  font-weight: 500;
+  color: white;
+  font-size: 25px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 1s;
+}
+.overlay:hover  h3{
+      bottom: 49%;
+      opacity: 1;
+}
+.footer{
+  width:80%;
+  background:#24262B;
+  margin:auto;
+  padding: 30px 20px;
+  margin-top:50px;
+}
+.footer-collum{
+  width: 30%;
+  padding:0 15px;
+}
+.footer-collum h1{
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-collum h1::after{
+  content:'';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #E91E63;
+  height: 3px;
+  box-sizing: border-box;
+  width: 55px;
+
+}
+.footer-collum ul li:not(:last-child){
+  margin-bottom: 10px;
+
+}
+.footer-collum ul li a{
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  display: block;
+  transition: all 0.5s;
+}
+.footer-collum ul li a:hover{
+  padding-left: 8px;
+  color: #ffe;
+}
+.footer-collum .socail a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 40px;
+  color: white;
+  transition: 1s;
+}
+.footer-collum .socail a:hover{
+     color: #1F333E;
+     background: white;
+}
